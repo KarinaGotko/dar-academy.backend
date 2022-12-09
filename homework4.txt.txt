@@ -1,0 +1,101 @@
+public class homework4 {
+    public static void main(String[] args) {
+
+        //1:
+        int a = 10, b = 5;
+        int c;
+        c = a * b;
+        System.out.println(a + " * " + b + " = " + c);
+
+        //2:
+        int a1 = 20;
+        double a2 = 2.5;
+        double a3;
+        a3 = a1 / a2;
+        System.out.println(a1 + " / " + a2 + " = " + a3);
+
+        //3:
+        int l = 15, w = 9;
+        int A, P;
+        A = l * w;
+        P = 2 * (l + w);
+        System.out.println("The Perimeter of a rectangle is " + P + " and the Area of the same rectangle is " + A + ".");
+
+       //4:
+        int x = 2;
+        ++x; //2 + 1 = 3
+        System.out.println(x); //3
+        x++; //3 + 1 = 4
+        System.out.println(x); //4
+        System.out.println("x++ = " + x++); //should still be 4, but the next will be 5
+        System.out.println(x); //now it's 5
+        System.out.println("++x = " + ++x); //5 + 1 = 6
+
+
+        //5:
+        int x1 = 40;
+        System.out.println("x1+=5" + ": " + (x1+=5)); //45
+
+        //6:
+        int q1 = 25, q2 = 43;
+        System.out.println("Is 25 equal to 43? " + (25 == 43));
+
+        //7:
+        int r = 10, t = 5;
+        int sum = (r+t), diff = (r - t), multi = (r * t), divis = (r / t), module = (r % t);
+        System.out.println(r + "+" + t + " = " + sum);
+        System.out.println(r + "-" + t + " = " + diff);
+        System.out.println(r + "*" + t + " = " + multi);
+        System.out.println(r + "/" + t + " = " + divis);
+        System.out.println(r + "%" + t + " = " + module);
+
+        //8:
+        int F;
+        double C;
+        F = 120;
+        C = ((F - 32)/1.8);
+        System.out.println(F + " degrees in Fahrenheit would be " + C + " degrees in Celsius");
+
+        //9:
+        int g1 = 10, g2 = 451, g3 = 3;
+        double result = ((g1 + g2)%g3), result1 = ((result + 5) * 5);
+        System.out.println(result1);
+
+        //10:
+        int c1 = 65, c2 = 80;
+        boolean c3 = (c1 < 50) && (c1 < c2);
+        System.out.println("They are both correct? " + c3);
+
+    }
+}
+
+
+Terminal results:
+
+10 * 5 = 50
+
+20 / 2.5 = 8.0
+
+The Perimeter of a rectangle is 48 and the Area of the same rectangle is 135.
+
+3
+4
+x++ = 4
+5
+++x = 6
+
+x1+=5: 45
+
+Is 25 equal to 43? false
+
+10+5 = 15
+10-5 = 5
+10*5 = 50
+10/5 = 2
+10%5 = 0
+
+120 degrees in Fahrenheit would be 48.888888888888886 degrees in Celsius
+
+35.0
+
+They are both correct? false

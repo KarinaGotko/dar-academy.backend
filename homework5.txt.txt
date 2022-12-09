@@ -1,0 +1,120 @@
+import org.w3c.dom.ls.LSOutput;
+
+public class homework5 {
+    public static void main(String[] args) {
+        int length = 10, width = 10;
+        if (length == width) {
+            System.out.println("Your rectangle is a square");
+        } else {
+            System.out.println("Your rectangle is indeed a rectangle");
+        }
+        System.out.println();
+        //#2
+        int price = 7700;
+        if (price >= 5000) {
+            System.out.println("You got a 10% discount! Your final price would be: " + (price * 0.1) + "$");
+        } else {
+            System.out.println("Your final price would be: " + price + "$");
+        }
+        System.out.println();
+        //#3
+        int grade = 45;
+        if ((grade <= 100) && (grade >= 80)) {
+            System.out.println("You got an A!");
+        } else if ((grade >= 60) && (grade < 80)) {
+            System.out.println("You got a B");
+        } else if ((grade >= 50) && (grade < 60)) {
+            System.out.println("You got a C");
+        } else if ((grade >= 45) && (grade < 50)) {
+            System.out.println("You got a D");
+        } else if ((grade >= 25) && (grade < 45)) {
+            System.out.println("You got an E");
+        } else if (grade < 25) {
+            System.out.println("You got an F");
+        }
+        System.out.println();
+        //#5
+        int number = 5423426, reverse = 0;
+        System.out.println("The number is " + number);
+        while (number != 0) {
+            int digit = (number % 10);
+            reverse = reverse * 10 + digit;
+            number /= 10;
+        }
+        System.out.println("The reversed number is " + reverse);
+        System.out.println();
+
+        //#6
+        for (int i = 0; i < 4; i++) {
+            System.out.print("*");
+            for (int j = 1; j < 10; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        for (int h = 0; h < 5; h++) {
+            System.out.print("*");
+            for (int t = 1; t < h + 1; t++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        int p;
+        for (p = 1; p <= 5; p++) {
+            for (int l = p; l < 5; l++) {
+                System.out.print("**");
+            }
+            for (int m = p; m > 0; m--) {
+                System.out.print(m);
+            }
+            for (int q = 2; q <= p; q++) {
+                System.out.print(q);
+            }
+            System.out.println();
+        }
+        System.out.println();
+        //#7
+        int num = 6, i = 4, sum = 0;
+        while (i <= num) {
+            sum += i;
+            i++;
+        }
+        System.out.println("Sum = " + sum);
+        //another solution but using for:
+        int a = 4, b = 6, summ = 0;
+        for (int c = a; c <= b; c++) {
+
+            System.out.print(summ + "+" + c + "=");
+            summ += c;
+            System.out.println(summ);
+        }
+        System.out.println("The sum is: " + summ);
+
+        System.out.println();
+        //#8
+        int sal = 5000;
+        String clas = "B";
+        switch (clas) {
+            case "C" -> System.out.println("Your salary this month is: " + sal);
+            case "A" -> System.out.println("You salary this month is: " + (sal + (sal * 0.5)));
+            case "B" -> System.out.println("You salary this month is: " + (sal + (sal * 0.25)));
+        }
+        System.out.println();
+        //#9
+        int a1 = 1, a2 = 1, fib = 9, a3;
+        System.out.print(a1 + " " + a2 + " ");
+        for (int fibr = 3; fibr <= fib; fibr++){
+            a3 = a1 + a2;
+            System.out.print(a3 + " ");
+            a1 = a2;
+            a2 = a3;
+                }
+        System.out.println();
+
+
+    }
+}
